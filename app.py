@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Configure upload folder
-app.config['UPLOAD_FOLDER'] = '/home/254JasonMbugua/mysite/static/images'
+app.config['UPLOAD_FOLDER'] = '/home/Fahim999gt/mysite/static/images'
 if not os.path.exists(app.config['UPLOAD_FOLDER']):
     os.makedirs(app.config['UPLOAD_FOLDER'])
 
