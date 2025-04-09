@@ -36,6 +36,7 @@ def signup():
     username=request.form["username"]
     password=request.form['password']
     email=request.form['email']
+    
     phone=request.form['phone']
     # establish connection to database
     # we are going to use pymysql module
@@ -106,10 +107,16 @@ def signin():
 # DEFINE THE NAME OF THE FUNCTION 
 def add_product():
     # get user inputs from the form
-    product_name =request.form["product_name"]
-    product_description= request.form["product_description"]
-    product_cost =request.form["product_cost"]
+    product_name = request.form["product_name"]
+    product_brand = request.form["product_brand"]
+    product_size = request.form["product_size"]
+    product_color = request.form["product_color"]
+    product_material = request.form["product_material"]
+    product_gender = request.form["product_gender"]
+    product_price = request.form["product_price"]
+    product_quantity = request.form["product_quantity"]
     product_photo=request.files["product_photo"]
+    
 
     # get the original name of the uploaded image file
     filename =product_photo.filename
